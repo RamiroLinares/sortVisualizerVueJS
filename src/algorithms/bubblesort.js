@@ -15,4 +15,4 @@ export default function bubblesort(array) {
           }
         }
       }
-  return "bubble"};
+  return array;};
