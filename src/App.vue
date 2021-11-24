@@ -3,7 +3,12 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/quicksort">Quicksort</router-link>
+      <router-link to="/quicksort">Quicksort</router-link> |
+      <router-link to="/bubblesort">Bubblesort</router-link> |
+      <router-link to="/insertionsort">Insertionsort</router-link> |
+      <router-link to="/mergesort">Mergesort</router-link> |
+      <router-link to="/pancakesort">Pancakesort</router-link> |
+      <router-link to="/selectionsort">Selectionsort</router-link>
     </div>
     <router-view/>
   </div>

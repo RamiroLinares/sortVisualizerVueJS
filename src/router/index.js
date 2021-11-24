@@ -21,10 +21,33 @@ const routes = [
   {
     path: '/quicksort',
     name: 'Quicksort',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Quicksort.vue')
+    component: () => import('../views/Quicksort.vue')
+  },
+  {
+    path: '/bubblesort',
+    name: 'Bubblesort',
+    component: () => import('../views/Bubblesort.vue')
+  },
+  {
+    path: '/insertionsort',
+    name: 'Insertionsort',
+    component: () => import('../views/Insertionsort.vue')
+  },
+  {
+    path: '/mergesort',
+    name: 'Mergesort',
+    component: () => import('../views/Mergesort.vue')
+  },
+  {
+    path: '/pancakesort',
+    name: 'Pancakesort',
+    component: () => import('../views/Pancakesort.vue')
+  },
+
+  {
+    path: '/selectionsort',
+    name: 'Selectionsort',
+    component: () => import('../views/Selectionsort.vue')
   }
 ]
 
