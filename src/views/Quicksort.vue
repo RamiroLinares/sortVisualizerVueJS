@@ -12,7 +12,7 @@ export default {
   name: 'Quicksort',
   methods: {
     quicksort () {
-      const array = [4000, 10, 24, 1]
+      const array = [4000, 10, 24, 1, 25, 28, 40, 11, 10, 4]
       console.log(quicksort(array))
     }
   }
