@@ -11,9 +11,17 @@
       <router-link to="/selectionsort">Selectionsort</router-link>
     </div>
     <router-view/>
+    <Footer></Footer>
   </div>
 </template>
-
+<script>
+  import Footer from './components/Footer'
+  export default {
+    components:{
+      Footer
+    }
+  }
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
