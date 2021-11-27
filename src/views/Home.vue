@@ -3,11 +3,9 @@
     <section class="hero">
       <div class="hero-text container">
         <h4>Sort Algorithm</h4>
-        <hr />
         <h2>
-          Visualizer <br />
+          Visualizer
         </h2>
-        <hr />
       </div>
     </section>
   </div>
@@ -42,30 +40,18 @@ export default {
     flex-direction: column;
     justify-content: center;
     color: #fff;
-
+    text-align:right;
     h4 {
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 30px;
       padding-bottom: 4px;
     }
 
     h2 {
-      font-size: 50px;
+      font-size: 80px;
       @media (min-width: 550px) {
         font-size: 80px;
       }
-    }
-
-    hr:nth-child(2) {
-      max-width: 365px;
-      margin-bottom: 16px;
-    }
-    hr:nth-child(4) {
-      height: 6px;
-      background-color: #fff;
-      border: none;
-      max-width: 85px;
-      margin-top: 16px;
     }
   }
 }
