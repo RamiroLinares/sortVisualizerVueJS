@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navigation/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
@@ -16,14 +17,26 @@
 </template>
 <script>
   import Footer from './components/Footer'
+  import Navigation from './components/Navigation'
   export default {
+    name: "App",
     components:{
-      Footer
+      Footer, Navigation
     }
-  }
+  };
 </script>
-<style>
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family:"Raleway",sans-serif;
+  font-weight:400;
+}
 #app {
+  min-height:100vh;
+  position: relative;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -42,5 +55,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 </style>
