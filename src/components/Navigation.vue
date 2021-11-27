@@ -38,5 +38,55 @@
 </script>
 
 <style lang="scss" scoped>
+header{
+    background-color: rgba(0, 0 , 0, 0.8);
+    z-index:99;
+    width: 100%;
+    position: fixed;
+    transition: .5s ease all;
+    color: #fff;
 
+    nav{
+        display: flex;
+        flex-direction:row;
+        padding: 12px 0;
+        transition: .5s ease all;
+        width:90%;
+        margin: 0 auto;
+        @media(min-width: 1140px){
+            max-width: 1140px;
+        }
+        ul,.link{
+            font-weight: 500;
+            color: #fff;
+            list-style:none;
+            text-decoration:none;
+
+        }
+        li{
+            text-transform: uppercase;
+            padding:16px;
+            margin-left:16px;
+        }
+        .link{
+            font-size:14px;
+            transition: .5s ease all;
+            padding-bottom: 4px;
+            border-bottom: 1px solid transparent;
+            &:hover{
+                color: #00afea;
+                border-color: #00afea;
+            }
+        }
+        .branding{
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 50px;
+                transition: .5s ease all
+            }
+        }
+    }
+}
 </style>
