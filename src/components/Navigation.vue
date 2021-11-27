@@ -34,7 +34,17 @@
 </template>
 
 <script>
-    export default {};
+    export default {
+        name: "navigation",
+        data(){
+            return{
+                scrollPosition: null,
+                mobile: true,
+                mobileNav: null,
+                windowWidth: null,
+            };
+        },
+    };
 </script>
 
 <style lang="scss" scoped>
