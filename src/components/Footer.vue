@@ -38,12 +38,13 @@
 
 <script>
     export default{
+        name: "Footer",
         data(){
             return{
                 footerText:'Copyright © 2021'
             }
-        }
-    }
+        },
+    };
 </script>
 
 <style scoped>

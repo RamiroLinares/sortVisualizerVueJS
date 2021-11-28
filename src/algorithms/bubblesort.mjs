@@ -18,4 +18,4 @@ export default function bubblesort(array) {
       }
   return array;};
 
-  console.log(bubblesort([4,5,3,2,1,6,7,10,9,8]));
+  //console.log(bubblesort([4,5,3,2,1,6,7,10,9,8]));
