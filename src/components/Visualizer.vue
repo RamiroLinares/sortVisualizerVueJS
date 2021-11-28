@@ -8,7 +8,7 @@
           class="bar-positive"
           :key="item[xKey]"
           :x="xScale(item[xKey])"
-          :y="yScale(0)"
+          :y="yScale(item[yKey])"
           :width="xScale.bandwidth()"
           :height="0"
         ></rect>
@@ -44,11 +44,11 @@ export default {
     AnimateLoad() {
       selectAll("rect")
         .data(this.data)
-        .transition()
-        .delay((d, i) => {
+        //.transition()
+        /*.delay((d, i) => {
           return i * 150;
         })
-        .duration(1000)
+        .duration(1000)*/
         .attr("y", d => {
           return this.yScale(d[this.yKey]);
         })
@@ -60,12 +60,12 @@ export default {
       // redraw the chart 300ms after the window has been resized
       window.addEventListener("resize", () => {
         this.$data.redrawToggle = false;
-        setTimeout(() => {
+        //setTimeout(() => {
           this.$data.redrawToggle = true;
           this.$data.svgWidth =
             document.getElementById("container").offsetWidth * 0.75;
           this.AnimateLoad();
-        }, 300);
+        //}, 300);
       });
     }
   },

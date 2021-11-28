@@ -20,43 +20,49 @@ import Chart from '@/components/Chart.vue'
 export default {
   name: 'bubblesort',
   components:{Visualizer},
-
   data() {
     return{
       sortingMethod:"Bubble Sort",
       array:[],
       size:10,
-      componentKey: 0  
+      componentKey: 0,
+      array2:[]  
     }
   },
   methods: {
-    bubblesort () {
+    async bubblesort () {
+/*       const animationDelay=function(componentKey){
+        componentKey += 1
+        setTimeout(() => {
+  console.log("1 Segundo esperado")
+}, 1000);} */
       //this.array = [4000, 10, 24, 1, 25, 28, 40, 11, 10, 4]
-      let array2=[];
+    
       for (let i = 0; i < this.array.length; i++) {
-        array2[i]=this.array[i].amount;
-        
+        this.array2[i]=this.array[i].amount;
+        }
+      console.log(this.array2);
+      this.array2=bubblesort(this.array2)
+      console.log(this.array2);
+      
+      for (let j = 0; j < this.array2.length; j++) {
+      for (let i = 0; i < this.array2[j].length; i++) {
+        this.array[i].amount=this.array2[j][i]; 
       }
-      console.log(array2);
-      //console.log(bubblesort(array2));
-      array2=bubblesort(array2)
-      for (let i = 0; i < array2.length; i++) {
-        this.array[i].amount=array2[i]; 
+      await new Promise(resolve => {setTimeout(resolve,300);
+      this.componentKey += 1;
+      });
       }
-      this.componentKey += 1
     },
     fillWithRandomNumbers(){
       this.array=[];
       for (let i = 0; i < this.size; i++) {
-        //this.array[i].pos=i;
-        //this.array[i].amount=Math.floor(Math.random() * (1000 - 0)) + 0;
         let pos=i;
         let amount=Math.floor(Math.random() * (1000 - 1)) + 1;
         let objaux={pos: pos, amount: amount};
         this.array.push(objaux);
         }
         this.componentKey += 1
-      console.log(this.array[0].amount)
     },
     changeSize(){
       this.size=document.getElementById("slider1").value;
