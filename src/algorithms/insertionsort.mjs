@@ -1,4 +1,5 @@
 export default function insertionsort(array) {
+    let list=[]
     let n = array.length;
         for (let i = 1; i < n; i++) {
             // Choosing the first element in our unsorted subarray
@@ -10,6 +11,6 @@ export default function insertionsort(array) {
                 j--;
             }
             array[j+1] = current;
-        }
+        list.push(array.slice())}
 
-return array;}
+return list;}
