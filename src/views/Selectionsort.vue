@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import selectionsort from '@/algorithms/selectionsort.js'
+import selectionsort from '@/algorithms/selectionsort.mjs'
 
 export default {
   name: 'selectionsort',

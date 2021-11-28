@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import mergesort from '@/algorithms/mergesort.js'
+import mergesort from '@/algorithms/mergesort.mjs'
 
 export default {
   name: 'mergesort',

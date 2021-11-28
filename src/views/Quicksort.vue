@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import quicksort from '@/algorithms/quicksort.js'
+import quicksort from '@/algorithms/quicksort.mjs'
 
 export default {
   name: 'Quicksort',

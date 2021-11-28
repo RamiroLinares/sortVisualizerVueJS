@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import insertionsort from '@/algorithms/insertionsort.js'
+import insertionsort from '@/algorithms/insertionsort.mjs'
 
 export default {
   name: 'insertionsort',

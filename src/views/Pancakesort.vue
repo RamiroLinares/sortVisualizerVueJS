@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import pancakesort from '@/algorithms/pancakesort.js'
+import pancakesort from '@/algorithms/pancakesort.mjs'
 
 export default {
   name: 'pancakesort',

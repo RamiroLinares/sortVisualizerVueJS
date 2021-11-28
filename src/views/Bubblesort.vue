@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import bubblesort from '@/algorithms/bubblesort.js'
+import bubblesort from '@/algorithms/bubblesort.mjs'
 
 export default {
   name: 'bubblesort',
