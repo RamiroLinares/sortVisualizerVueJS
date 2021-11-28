@@ -1,5 +1,5 @@
 import {assert, expect} from 'chai';
-import mergesort from '../src/algorithms/mergesort.js';
+import mergesort from '../src/algorithms/mergesort.mjs';
 
 describe('Merge Sort',function(){
     it('Algorithm should return array elements in order',function(){

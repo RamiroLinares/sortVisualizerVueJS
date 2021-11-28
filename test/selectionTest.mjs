@@ -1,5 +1,5 @@
 import {assert, expect} from 'chai';
-import selectionsort from '../src/algorithms/selectionsort.js';
+import selectionsort from '../src/algorithms/selectionsort.mjs';
 
 describe('Selection Sort',function(){
     it('Algorithm should return array elements in order',function(){

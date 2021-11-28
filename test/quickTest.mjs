@@ -1,5 +1,5 @@
 import {assert, expect} from 'chai';
-import quicksort from '../src/algorithms/quicksort.js';
+import quicksort from '../src/algorithms/quicksort.mjs';
 
 describe('Quick Sort',function(){
     it('Algorithm should return array elements in order',function(){

@@ -1,5 +1,5 @@
 import {assert, expect} from 'chai';
-import bubblesort from '../src/algorithms/bubblesort.js';
+import bubblesort from '../src/algorithms/bubblesort.mjs';
 
 describe('Bubble Sort',function(){
     it('Algorithm should return array elements in order',function(){

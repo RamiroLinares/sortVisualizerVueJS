@@ -1,5 +1,5 @@
 import {assert, expect} from 'chai';
-import pancakesort from '../src/algorithms/pancakesort.js';
+import pancakesort from '../src/algorithms/pancakesort.mjs';
 
 describe('Pancake Sort',function(){
     it('Algorithm should return array elements in order',function(){

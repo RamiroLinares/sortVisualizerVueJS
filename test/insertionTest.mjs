@@ -1,5 +1,5 @@
 import {assert, expect} from 'chai';
-import insertionsort from '../src/algorithms/insertionsort.js';
+import insertionsort from '../src/algorithms/insertionsort.mjs';
 
 describe('Insertion Sort',function(){
     it('Algorithm should return array elements in order',function(){
