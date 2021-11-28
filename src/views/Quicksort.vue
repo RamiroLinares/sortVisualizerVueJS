@@ -71,7 +71,7 @@ export default {
           this.array[i].amount = this.array2[j][i];
         }
         await new Promise((resolve) => {
-          setTimeout(resolve, 10);
+          setTimeout(resolve, 100);
           this.componentKey += 1;
         });
       }
