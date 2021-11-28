@@ -1,4 +1,5 @@
 export default function pancakesort(array) {
+    let list=[]
     for (var i = array.length - 1; i >= 1; i--) {
         // find the index of the largest element not yet sorted
         var max_idx = 0;
@@ -26,5 +27,5 @@ export default function pancakesort(array) {
         new_slice = array.slice(0, i+1).reverse();
         for ( j = 0; j <= i; j++) 
             array[j] = new_slice[j];
-    }
-    return array;}
+    list.push(array.slice());}
+    return list;}
