@@ -1,24 +1,42 @@
 <template>
   <div class="about">
-    <h1>This is an about page, Testing visualiztion </h1>
-    <Chart class="chart"></Chart>
+    <div class="Graph">
+      <Visualizer :title="sortingMethod" xKey="name" yKey="amount" :data="barChartData"/>
+    </div>
   </div>
 </template>
 
 <script>
 import Chart from '@/components/Chart.vue'
-
+import Visualizer from '../components/Visualizer.vue';
 export default {
   name: "About",
-  components:{Chart},
-  data(){
-
-  }
+  components:{Visualizer},
+  data: () => ({
+    sortingMethod:"Quick Sort",
+    barChartData: [
+      {
+        name: "Roses",
+        amount: 25
+      },
+      {
+        name: "Tulips",
+        amount: 40
+      },
+      {
+        name: "Daisies",
+        amount: 15
+      },
+      {
+        name: "Narcissuses",
+        amount: 14
+      }
+    ]
+  }),
 };
 </script>
 <style lang="scss" scoped>
-  .chart{
-    margin:120px auto;
-    display: block;
+  .Graph{
+    padding:122px 0 0 0;
   }
 </style>
