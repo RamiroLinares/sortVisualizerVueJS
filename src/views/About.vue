@@ -7,6 +7,13 @@
 </template>
 
 <script>
+/*TODO:
+1. Make chart smaller
+2. Convert arrays to a format that can be read by d3
+3. Test/implement  reactive visualization (view sorting in real time)
+4. connect buttons and slider to js
+5. Implement on all algorithms
+6. Add algorithm descriptions to each page*/
 import Chart from '@/components/Chart.vue'
 import Visualizer from '../components/Visualizer.vue';
 export default {
