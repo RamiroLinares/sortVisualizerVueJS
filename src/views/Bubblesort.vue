@@ -2,7 +2,6 @@
   <div class="bubblesort">
     <h1>bubblesort</h1>
     <p>bubbleSort</p>
-    <b-button variant="primary" v-on:click="bubblesort()">bubblesort</b-button>
     <b-icon
       icon="bar-chart-fill"
       v-on:click="fillWithRandomNumbers()"
@@ -68,7 +67,7 @@ export default {
           this.array[i].amount = this.array2[j][i];
         }
         await new Promise((resolve) => {
-          setTimeout(resolve, 300);
+          setTimeout(resolve, 10);
           this.componentKey += 1;
         });
       }

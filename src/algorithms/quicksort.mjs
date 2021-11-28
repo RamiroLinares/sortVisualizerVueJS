@@ -13,5 +13,6 @@ export default function quicksort(array) {
       array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
     }
     
+    console.log(array);
     return quicksort(left).concat(pivot, quicksort(right));
   };
