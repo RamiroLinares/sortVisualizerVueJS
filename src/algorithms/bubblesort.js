@@ -1,4 +1,4 @@
-export default async function bubblesort(array) {
+export default function bubblesort(array) {
     for(var i = 0; i < array.length; i++){
      
         // Last i elements are already in place  
@@ -12,8 +12,10 @@ export default async function bubblesort(array) {
             var temp = array[j]
             array[j] = array[j + 1]
             array[j+1] = temp
-            await new Promise(resolve => setTimeout(resolve,10));
+            //await new Promise(resolve => setTimeout(resolve,10));
           }
         }
       }
   return array;};
+
+  console.log(bubblesort([4,5,3,2,1,6,7,10,9,8]));
