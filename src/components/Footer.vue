@@ -21,7 +21,7 @@
             </ul>
           </div> 
           <div class="col-xs-6 col-md-3">
-            <img src="@/assets/GitHub-Logo.png" alt="GitHub" width="190" height="107">
+            <a href="https://github.com/RamiroLinares/sortVisualizerVueJS"><img src="@/assets/GitHub-Logo.png" alt="GitHub" width="190" height="107"></a>
           </div>
         </div>
         <hr>
