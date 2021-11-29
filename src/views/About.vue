@@ -14,7 +14,6 @@
 4. connect buttons and slider to js
 5. Implement on all algorithms
 6. Add algorithm descriptions to each page*/
-import Chart from '@/components/Chart.vue'
 import Visualizer from '../components/Visualizer.vue';
 export default {
   name: "About",

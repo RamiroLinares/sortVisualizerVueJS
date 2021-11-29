@@ -1,7 +1,14 @@
 <template>
   <div class="bubblesort">
-    <h1>bubblesort</h1>
-    <p>bubbleSort</p>
+    <div class="Graph">
+      <Visualizer
+        :title="sortingMethod"
+        :key="componentKey"
+        xKey="pos"
+        yKey="amount"
+        :data="array"
+      />
+    </div>
     <b-icon
       icon="bar-chart-fill"
       v-on:click="fillWithRandomNumbers()"
@@ -25,22 +32,12 @@
       id="slider1"
       v-on:change="changeSize()"
     />
-    <div class="Graph">
-      <Visualizer
-        :title="sortingMethod"
-        :key="componentKey"
-        xKey="pos"
-        yKey="amount"
-        :data="array"
-      />
-    </div>
   </div>
 </template>
 
 <script>
 import bubblesort from "@/algorithms/bubblesort.mjs";
 import Visualizer from "../components/Visualizer.vue";
-import Chart from "@/components/Chart.vue";
 export default {
   name: "bubblesort",
   components: { Visualizer },

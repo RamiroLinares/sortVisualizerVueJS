@@ -40,7 +40,6 @@
 <script>
 import insertionsort from "@/algorithms/insertionsort.mjs";
 import Visualizer from "../components/Visualizer.vue";
-import Chart from "@/components/Chart.vue";
 export default {
   name: "insertionsort",
   components: { Visualizer },

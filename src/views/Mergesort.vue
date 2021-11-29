@@ -40,7 +40,6 @@
 <script>
 import mergesort from "@/algorithms/mergesort.mjs";
 import Visualizer from "../components/Visualizer.vue";
-import Chart from "@/components/Chart.vue";
 export default {
   name: "mergesort",
   components: { Visualizer },

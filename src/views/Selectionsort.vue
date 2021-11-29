@@ -40,7 +40,6 @@
 <script>
 import selectionsort from "@/algorithms/selectionsort.mjs";
 import Visualizer from "../components/Visualizer.vue";
-import Chart from "@/components/Chart.vue";
 export default {
   name: "selectionsort",
   components: { Visualizer },

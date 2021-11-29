@@ -44,7 +44,6 @@
 <script>
 import quicksort from "@/algorithms/quicksort.mjs";
 import Visualizer from "../components/Visualizer.vue";
-import Chart from "@/components/Chart.vue";
 export default {
   name: "quicksort",
   components: { Visualizer },

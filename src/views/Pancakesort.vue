@@ -40,7 +40,6 @@
 <script>
 import pancakesort from "@/algorithms/pancakesort.mjs";
 import Visualizer from "../components/Visualizer.vue";
-import Chart from "@/components/Chart.vue";
 export default {
   name: "pancakesort",
   components: { Visualizer },
