@@ -96,7 +96,7 @@ export default {
         .domain([this.dataMin > 0 ? 0 : this.dataMin, this.dataMax]);
     },
     svgHeight() {
-      return this.svgWidth / 1.61803398875; // golden ratio
+      return this.svgWidth / 3;//1.61803398875; // golden ratio
     }
   }
 };

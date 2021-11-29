@@ -1,7 +1,14 @@
 <template>
   <div class="mergesort">
-    <h1>mergesort</h1>
-    <p>mergesort</p>
+    <div class="Graph">
+      <Visualizer
+        :title="sortingMethod"
+        :key="componentKey"
+        xKey="pos"
+        yKey="amount"
+        :data="array"
+      />
+    </div>
     <b-icon
       icon="bar-chart-fill"
       v-on:click="fillWithRandomNumbers()"
@@ -25,15 +32,12 @@
       id="slider1"
       v-on:change="changeSize()"
     />
-    <div class="Graph">
-      <Visualizer
-        :title="sortingMethod"
-        :key="componentKey"
-        xKey="pos"
-        yKey="amount"
-        :data="array"
-      />
-    </div>
+    <h1>Description</h1>
+      <p >Merge Sort is an in-place sorting algorithm</p>
+      <p > It works by selecting a 'pivot' element from the array and partitioning the other elements into two sub-arrays, </p>
+      <p > according to whether they are less than or greater than the pivot. For this reason, </p>
+      <p >it is sometimes called partition-exchange sort. The sub-arrays are then sorted recursively. </p>
+      <p >This can be done in-place, requiring small additional amounts of memory to perform the sorting.</p>
   </div>
 </template>
 
