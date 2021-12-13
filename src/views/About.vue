@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script>
+<!--script>
 /*TODO:
 1. Make chart smaller
 2. Convert arrays to a format that can be read by d3
@@ -14,7 +14,7 @@
 4. connect buttons and slider to js
 5. Implement on all algorithms
 6. Add algorithm descriptions to each page*/
-import Visualizer from '../components/Visualizer.vue';
+//import Visualizer from '../components/Visualizer.vue';
 export default {
   name: "About",
   components:{Visualizer},
@@ -45,4 +45,4 @@ export default {
   .Graph{
     padding:122px 0 0 0;
   }
-</style>
+</style !-->
